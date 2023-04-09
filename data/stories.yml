@@ -152,3 +152,18 @@ stories:
   - action: utter_bye
   - action: user_details_form
   - active_loop: user_details_form
+
+- story: Yoga
+  steps:
+  - intent: Yoga_Club
+  - action: utter_yoga_club
+
+- story: Chess Club
+  steps: 
+  - intent: Chess_club
+  - action: utter_chess_club
+
+- story: Cricket Club
+  steps: 
+  - intent: Cricket_Club
+  - action: utter_Cricket_Club

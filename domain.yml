@@ -36,13 +36,19 @@ intents:
   - register
   - thanks
   - let_check
+  - request_restaurant
+  - inform
+  - Yoga_Club
+  - Chess_club
+  - Cricket_Club
+  - E_cell
 
 entities:
   - name
-  - number
-  - locations
   - facility_type
-  
+  - cuisine
+  - number
+
 slots:
   name:
     type: text
@@ -63,6 +69,21 @@ slots:
   facility_type:
     type: text
     influence_conversation: false
+
+  cuisine:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  num_people:
+    type: float
+    auto_fill: false
+    influence_conversation: false
+  outdoor_seating:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+
+
 
 responses:
   utter_cheer_up:
@@ -137,9 +158,11 @@ responses:
   utter_MNNIT_Games:
   - text : "There are many games played in the campus and Difference event organise for games 1. Athletics annual meet, 2. Josh and Jalal"
     channel: "games"
-  - text : "Which game would you like to play?"
+ # - text : "Which game would you like to play?"
+
   utter_ground:
   - text : "There are two ground present in the campus in which a athelete Ground and other field named Gym khana Ground"
+ 
   utter_basket:
   - text : "There are two court in the campus
            1. New Court
@@ -151,6 +174,7 @@ responses:
 
   utter_cordinator:
   - text : "Cordinator Name: Purushottam Agarwal , Anurag, Mehul, Amit All are Final year Students"
+  
   utter_director:
   - text : "Director Name is Dr. R.P Verma"
 
@@ -197,28 +221,77 @@ responses:
 
   utter_thanks:
   - text: "welcome"
+ 
   utter_bye:
   - text: "bye"
+ 
   utter_affirm:
   - text: " Is there anything else I can help you with?" 
+ 
   utter_deny:
   - text: "no"
+  
   utter_iamabot:
   - text: "I am a Bot and I am happy to help you."
   - text: "I am a bot, powered by Rasa."
+ 
   utter_details_thanks:
   - text: "Thanks for providing the given details \nemailid is : {registeremail}"
+ 
   utter_default:
   - text: "ok"
+  
   utter_defaults:
   - text: Sorry I didn't get that. Can you rephrase?
+  
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
   utter_Image of MNNIT:
   - text: "MNNIT is the most popular calloge. and It has 1st position among of NIT in terms of Placement"
     image: "http://www.mnnit.ac.in"
+
+  utter_submit:
+  - text: "All done!"
+  
+  utter_slots_values:
+  - text: "I am going to run a restaurant search using the following parameters:\n
+            - cuisine: {cuisine}\n
+            - num_people: {num_people}\n
+            - outdoor_seating: {outdoor_seating}"
+
+  utter_ask_cuisine:
+  - text: "What cuisine?"
+
+  utter_ask_num_people:
+  - text: "How many people?"
+
+  utter_ask_outdoor_seating:
+  - text: "Do you want to sit outside?"
+
+  utter_yoga_club:
+  - text: "EDC Guest House is the place where yoga club present. All the students are practice here.
+         Prof. Divya Kumar is the head of the club and 
+         Sunil Kumar Sharma is the co-ordinator who is studying in the 3rd Year "
+  
+  utter_chess_club:
+  - text: " Chess Club is the official club of the college , various tournament are organized regularly which is both
+        online or offline. Generally lichess is thhe plateform where  chess tournament is organized"
+
+  utter_Cricket_Club:
+  - text: "Cricket Club is the most popular club, club members are practices at the gymkhana ground . Recently 
+        cricket club won the inter NIT trophy"
+
+  utter_E_cell:
+  - text: "Full form of E-cell is the entrepreneurship cell, this club is also the most popular club . Work of this club
+        is to promote the start-ups and unique idea of student and also presenting ideas into reality"
+
+  
+
+
 
 forms:
   user_details_form:
@@ -230,7 +303,22 @@ forms:
         entity: number
   register_form:
     registeremail:
-      - type: from_text 
+      - type: from_text
+  restaurant_form: 
+    required_slots:
+      cuisine:
+        - type: from_entity
+          entity: cuisine
+      num_people:
+        - type: from_entity
+          entity: number
+      outdoor_seating:
+        - type: from_intent
+          intent: affirm
+          value: true
+        - type: from_intent
+          intent: deny
+          value: false
 
 actions:
   - utter_greet
@@ -251,6 +339,8 @@ actions:
   - action_image
   - action_greet
   - action_register_form
+  - let_check
+
 
 session_config:
   session_expiration_time: 60
