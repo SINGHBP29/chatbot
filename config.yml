@@ -17,7 +17,7 @@ pipeline:
    - name: "SpacyNLP"
      model: "en_core_web_sm"
      case_sensitive: False
-   - name: "SpacyTokenizer"
+  
    - name: "DucklingHTTPExtractor"
     # url: "http://localhost:8000"
      dimensions: ["number"]

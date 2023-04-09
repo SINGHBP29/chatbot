@@ -42,6 +42,15 @@ intents:
   - Chess_club
   - Cricket_Club
   - E_cell
+  - MHM
+  - Anokhi_Pahel
+  - volleyball
+  - Rotaract_club
+  - Football
+  - Machanical_department
+  - Multi_Purpose_hall
+  - Green_Club
+
 
 entities:
   - name
@@ -288,11 +297,44 @@ responses:
   utter_E_cell:
   - text: "Full form of E-cell is the entrepreneurship cell, this club is also the most popular club . Work of this club
         is to promote the start-ups and unique idea of student and also presenting ideas into reality"
-
   
+  utter_MHM:
+  - text: "Full form of MHM is the MNNIT Media House. All the photography , videography compitition are organized and reguraly update of the college"
 
+  utter_Anokhi_Pahel:
+  - text: "Anokhi pahel is the social service where our college students study illiterate child and also pick and Drop child"
 
+  utter_volleyball:
+  - text: "Volleyball is a sport that involves two teams of six players each playing against each other in a enclosed
+   court either indoors or outdoors. 
+   (The exception is beach volleyball which is played on the sand.) Each 
+   player is responsible for holding and striking the ball with their hand or a paddle. A player can only hit the ball with their backhand
+    and can not touch the net. When a player hits the ball, it must bounce at least once on the ground before coming into play. 
+    The object of the game is to score points by hitting the ball over the 
+    cross-point line (either side of the court) into the opponents' side. Practice area of volleyball near Multi Purpose Hall (MP Hall)"
 
+  utter_Green_club:
+  - text: "Maximum tree has been planted, installed dustbin at different places, arranged food and water
+   for birds and animal major in summer"
+    image: "https://instagram.com/mnnit.green_club?igshid=ODM2MWFjZDg="
+  
+  utter_Rotaract_club:
+  - text: "Rotaract club do social work like visiting the orphan , old age house , blind school  to help them"
+    image: "https://www.instagram.com/rotaract_club_mnnit/"
+
+  utter_Football:
+  - text: " Football is  he who at any time got the ball into his hands, run [sic] with it till overtaken by one of the opposite part; and then, if he could shake himself loose from those on the opposite side who seized him, he run on; if not, he threw the ball from him, unless it was wrested from him by the other party, but no person was allowed to kick it"
+  - text: " Students practice football regularly at gymkhana ground "
+
+  utter_Machanical_department:
+  - text: " Mechanical department is situated at north side in academic building. HOD of the Mechanical Department is 
+          Dr. K.N Pandey. All teachers are best this is feedback given by the students"
+
+  utter_Multi_Purpose_hall:
+  - text: "Full form of MP Hall is Multi-Purpose hall, this is the place where many event of colloge organised like GAC
+          Convection, Culrav etc. and Students are played Badminton and Tennis
+           and Dance practice also going on"
+    
 forms:
   user_details_form:
     name:

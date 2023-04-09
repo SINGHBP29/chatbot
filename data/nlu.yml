@@ -445,7 +445,8 @@ nlu:
     - kam nahi kr rha hai 
     - its okay
     - lets check
-
+ 
+ # clubs
 - intent: Yoga_Club
   examples: |
     - yoga
@@ -488,6 +489,103 @@ nlu:
     - startups
     - start-ups
     - start-up
+
+- intent: MHM
+  examples: |
+    - media house 
+    - Media house
+    - Videography club
+    - Photography club
+    - Graphic design club 
+    - photoes
+
+- intent: Anokhi_Pahel
+  examples: |
+    - Anokhi pahel
+    - social service
+    - poor child study
+    - anokhi pahel
+    - social club
+    - Social Service Club
+
+- intent: volleyball
+  examples: |
+    - volleyball
+    - Volleyball
+    - Volley ball
+    - volley ball
+    - How do you play volleyball
+    - what is the best place to play volley ball
+    - is beach volleyball better than indoor
+    - How to play volleyball for beginners?
+    - how to play volleyball for beginners?
+    - volleyball game
+    - volleyball sports
+    - cannon ball
+    - what is the volley ball club
+    - What is the volleyball club
+
+- intent: Green_Club
+  examples: |
+    - Plantation
+    - clean the campus
+    - protect the bird 
+    - Protect the animals
+    - environment
+    - covering the tree
+    - what is the Green club
+    - what is green club
+    - What is the Green club
+    - what is the work of green club?
+    - what is the work of Green club?
+
+- intent: Rotaract_club
+  examples: |
+    - what is the rotaract club
+    - What is rotaract club
+    - what is the work of rotaract club
+    - rotaract club
+    - rotaract
+    - Rotaract
+    - Do social work 
+    - visiit the local area 
+    - go orphan
+    - spend the time with the people
+
+- intent: Football
+  examples: |
+    - Football
+    - football
+    - Foot ball
+    - Foot Ball
+
+- intent: Machanical_department
+  examples: |
+    - mechanical department
+    - Mechanical Department
+    - Mechanics department
+    - Hod of Mechanical Department
+    - Best Teachers in department
+  
+- intent: Multi_Purpose_hall
+  examples: |
+    - what is the multi-purpose hall
+    - what is the mp hall
+    - What is the MP hall
+    - What is the full form of MP hall
+    - What is the use of MP hall
+    - what is the use  of multi-purpose hall
+    - What is the use of Multi-purpose hall
+    - place where event organised
+    - event organised
+    
+    
+    
+
+
+  
+
+
 
 
   

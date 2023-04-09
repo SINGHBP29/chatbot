@@ -167,3 +167,43 @@ stories:
   steps: 
   - intent: Cricket_Club
   - action: utter_Cricket_Club
+
+- story: E cell
+  steps: 
+  - intent: E_cell
+  - action: utter_E_cell 
+
+- story: Media hous
+  steps: 
+  - intent: MHM
+  - action: utter_MHM
+
+- story: Anokhi pahel
+  steps:
+  - intent: Anokhi_Pahel
+  - action: utter_Anokhi_Pahel
+
+- story: Volley Ball
+  steps: 
+  - intent: volleyball
+  - action: utter_volleyball
+
+- story: Green Club
+  steps:
+  - intent: Green_Club
+  - action: utter_Green_club
+
+- story: Rotaract Club
+  steps: 
+  - intent: Rotaract_club
+  - action: utter_Rotaract_club
+
+- story: Machanical
+  steps:
+  - intent: Machanical_department
+  - action: utter_Machanical_department
+
+- story: multi purpose hall
+  steps:
+  - intent: Multi_Purpose_hall
+  - action: utter_Multi_Purpose_hall
